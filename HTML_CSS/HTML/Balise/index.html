@@ -42,6 +42,58 @@
             <hr>   
             <a href="#Biographie">Aller à la Biographie</a><br>
             <a href="https://fr.wikipedia.org/wiki/J._R._R._Tolkien">Wikipedia</a><br>
+        <form method ="post"action="">
+            <div>
+                <label for="nom">Votre nom : </label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom ?"
+                    maxlength="10" autofocus="autofocus">
+            </div>
+            <div>
+                <label for="mdp">Mot de passe : </label>
+                <input type="password" name="mdp" id="mdp" placeholder="Mot de passe ?"
+                maxlength="10" autofocus="autofocus">
+            </div>
+            <div>
+                <label for="comm">Commentaire : </label>
+                <textarea name="comm" id="comm" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="favori">Votre sport préferé ?</label>
+                <select name="favori" id="favori" size="1">
+                    <optgroup label="Athletisme">
+                        <option value="demi-fond">Demi-fond</option>
+                        <option value="matathon">Marathon</option>
+                        <option value="sprint">Sprint</option>
+                    </optgroup>
+                    <optgroup label="Natation">
+                        <option value="crowl">crowl</option>
+                        <option value="brasse">Brasse</option>
+                        <option value="pap">Papillon</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <p>Votre pizza avec ?</p>
+                <input type="checkbox" name="toping1" id="toping1"/>
+                <label for="toping1">Mozza</label>
+                <br>
+                <input type="checkbox" name="toping2" id="toping2">
+                <label for="toping2">Parm</label>
+                <br>
 
+            </div>
+            <div>
+                <p>Votre moyen de paiment ?</p>
+                <input type="radio" name="mode" id="espece" value="espece">
+                <label for="espece">Espece</label>
+                <br>
+                <input type="radio" name="mode" id="cb" value="cb">
+                <label for="cb">CB</label>
+                <br>
+                <input type="radio" name="mode" id="cheque" value="cheque">
+                <label for="Cheque">Cheque</label>
+                <br>
+            </div>
+        </form>    
 </body>
 </html>

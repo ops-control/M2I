@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input, select, textarea {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div {
+    width: 48%;
+}
+#motde{
+    float: right;
+    width: 50%;
+}

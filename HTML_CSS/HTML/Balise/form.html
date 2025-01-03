@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mon formulaire</title>
+</head>
+<body>
+    <form method ="post"action="">
+        <fieldset>
+            <legend>Vos infprmation pesonelles</legend>
+        <div id="motde1">
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom ?"
+                maxlength="10" autofocus="autofocus">
+        
+            <br>
+        
+            <label for="prenom">Prénom : </label>
+            <input type="text" name="prenom" id="prenom" placeholder="Votre prénom ?"
+                maxlength="10" autofocus="autofocus">
+            <br>
+
+        
+            <label for="prenom">Email : </label>
+            <input type="email" name="email" id="email" placeholder="Votre email ?"
+                maxlength="10" autofocus="autofocus">
+                <br>
+
+            <label for="mdp">Mot de passe : </label>
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe ?"
+            maxlength="10" autofocus="autofocus">
+        </div>
+        <div id="motde2">
+            <label for="mdp1">Repeter le Mot de passe : </label>
+            <input type="password" name="mdp1" id="mdp1" placeholder="Mot de passe ?"
+            maxlength="10" autofocus="autofocus">             <br>
+
+            <label for="dateN">Date de naissance : </label>
+            <input type="date" name="dateN" id="dateN">
+                <br>
+
+                <label for="favori">Roman préféré ?</label>
+                <select name="favori" id="favori" size="1">
+                    <optgroup label="Seigneur">
+                        <option value="demi-fond">La communaute</option>
+                        <option value="matathon">Terre du Milieu</option>
+                        <option value="sprint">Le retour du rois</option>
+                    </optgroup>
+                    <optgroup label="Hobbit">
+                        <option value="crowl">crowl</option>
+                        <option value="brasse">Brasse</option>
+                        <option value="pap">Papillon</option>
+                    </optgroup>
+                </select>  <br>
+                
+                <label for="tel">Telephone : </label>
+                <input type="email" name="tel" id="tel" placeholder="Votre telephone ?"
+                    maxlength="10" autofocus="autofocus">
+        </div>
+        </fieldset>
+            <fieldset>
+            <legend>Votre formule abonnement</legend>
+
+            <div>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>  
+                            <input type="radio" name="mode" id="p+" value="p+">
+                            <label for="p+">Premium +</label>
+                        </td>
+                        <td>  
+                            <input type="radio" name="mode" id="p" value="p">
+                            <label for="p">Premium</label>
+                        <td>
+                            <input type="radio" name="mode" id="d" value="d">
+                            <label for="d">Discovery</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accées web</td>
+                        <td><img src="images/check.png" alt="Description de l'image" width="50"/></td>
+                        <td><img src="images/check.png" alt="Description de l'image"width="50"/></td>
+                        <td><img src="images/check.png" alt="Description de l'image"width="50"/></td>
+                    </tr>
+                    <tr>
+                        <td>Accées mobile</td>
+                        <td><img src="images/check.png" alt="Description de l'image"width="50"/></td>
+                        <td><img src="images/check.png" alt="Description de l'image"width="50"/></td>
+                        <td><img src="images/delete.png" alt="Description de l'image"width="50"/></td>
+                    </tr>
+                    <tr>
+                        <td>Ecoute</td>
+                        <td><img src="images/check.png" alt="Description de l'image"width="50"/></td>
+                        <td><img src="images/delete.png" alt="Description de l'image"width="50"/></td>
+                        <td><img src="images/delete.png" alt="Description de l'image"width="50"/></td>
+                    </tr>
+                    <tr>
+                        <td>Tarifs</td>
+                        <td>11.99$/mois</td>
+                        <td>5.99$/mois</td>
+                        <td>Gratuit 1 mois</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+        <div>
+            <input type="checkbox" name="toping1" id="toping1"/>
+            <label for="toping1">Recevoir nos newsletters</label>
+            <input type="checkbox" name="toping2" id="toping2">
+            <label for="toping2">Recevoir les newsletters de nos partenaires</label>
+
+        </div>
+    </fieldset>
+    
+        <input type="submit" value="Valider">
+    </form>    
+</body>
+</html>
